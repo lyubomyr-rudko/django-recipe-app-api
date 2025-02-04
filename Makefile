@@ -4,7 +4,7 @@ up:
 	docker compose up
 
 lint:
-	@echo 'Running Lint'
+	@echo 'Running test'
 	docker compose run --rm app sh -c "flake8"
 
 test:
