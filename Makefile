@@ -3,6 +3,10 @@ up:
 	@echo 'Running app'
 	docker compose up
 
+down:
+	@echo 'Downing app'
+	docker compose down
+
 lint:
 	@echo 'Running test'
 	docker compose run --rm app sh -c "flake8"
