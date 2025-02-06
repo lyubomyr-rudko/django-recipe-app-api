@@ -19,6 +19,10 @@ build:
 	@echo "Running build"
 	docker compose build
 
-start_app_project:
+start_project:
 	@echo "Starting new project"
 	docker compose run --rm app sh -c "django-admin startproject app ."
+
+start_app_core:
+	@echo "Starting new project"
+	docker compose run --rm app sh -c "python manage.py startapp core"
