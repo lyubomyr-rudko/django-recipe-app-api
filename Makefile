@@ -15,6 +15,10 @@ test:
 	@echo "Running tests"
 	docker compose run --rm app sh -c "python manage.py test"
 
+wait_for_db:
+	@echo "Running tests"
+	docker compose run --rm app sh -c "python manage.py wait_for_db"
+
 build:
 	@echo "Running build"
 	docker compose build
